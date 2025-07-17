@@ -154,7 +154,7 @@ describe('Central de Atendimento ao Cliente', () => {
   it('Acessa a página da política de privacidade removendo o target e então clicando no link', () => {
     cy.get('a[href="privacy.html"]').invoke('removeAttr', 'target').click()
 
-    cy.contains('h1', 'CAC TAT - Política de Privacidade').should('be.visible')
+    cy.contains('h1', 'CAC TAT - Política de Privacidade').should('not.be.visible')
   });
 
 })
