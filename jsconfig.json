@@ -1,0 +1,26 @@
+// jsconfig.json
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        // "checkJs": true, // Pode ser útil para pegar erros de JS
+        "jsx": "preserve",
+        "target": "es2017",
+        "module": "commonjs",
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "types": [
+            "cypress",
+            "node"
+        ] // Importante para o Cypress
+    },
+    "include": [
+        "cypress/**/*.js",
+        "cypress/**/*.json",
+        "node_modules/cypress"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
